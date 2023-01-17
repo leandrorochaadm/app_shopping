@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'constants/constants.dart';
 import 'pages/pages.dart';
 
 void main() {
@@ -15,7 +16,20 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Shopping App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: MaterialColor(
+          kPrimaryColor.value,
+          const {
+            50: kPrimaryColor,
+            100: kPrimaryColor,
+            200: kPrimaryColor,
+            300: kPrimaryColor,
+            500: kPrimaryColor,
+            600: kPrimaryColor,
+            700: kPrimaryColor,
+            800: kPrimaryColor,
+            900: kPrimaryColor,
+          },
+        ),
         scaffoldBackgroundColor: Colors.white,
       ),
       routes: {
