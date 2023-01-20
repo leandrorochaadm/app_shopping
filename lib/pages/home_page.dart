@@ -1,3 +1,5 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shopping_app/constants/colors.dart';
 
@@ -84,6 +86,17 @@ class HomePage extends StatelessWidget {
           ]),
         )
       ]),
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: Colors.transparent,
+        onTap: (index) {},
+        height: 70,
+        color: kPrimaryColor,
+        items: [
+          Icon(Icons.home, size: 30, color: Colors.white),
+          Icon(CupertinoIcons.cart_fill, size: 30, color: Colors.white),
+          Icon(Icons.list, size: 30, color: Colors.white),
+        ],
+      ),
     );
   }
 }
