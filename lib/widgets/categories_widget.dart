@@ -26,7 +26,7 @@ class CategoriesWidget extends StatelessWidget {
                   height: 40,
                 ),
                 Text(
-                  'Relógio',
+                  'Sapatos',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 17,

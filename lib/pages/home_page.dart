@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
         HomeAppBar(),
         Container(
           // temporary height
-          height: 500,
+          // height: 500,
           padding: EdgeInsets.only(top: 15),
           decoration: BoxDecoration(
               color: Color(0xFFEDECF2),
@@ -22,6 +22,7 @@ class HomePage extends StatelessWidget {
                 topLeft: Radius.circular(35),
               )),
           child: Column(children: [
+            //SearchWidget
             Container(
               margin: EdgeInsets.symmetric(horizontal: 15),
               padding: EdgeInsets.symmetric(horizontal: 15),
@@ -48,6 +49,8 @@ class HomePage extends StatelessWidget {
                 ),
               ]),
             ),
+
+            // categories
             Container(
               margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
               child: Text(
@@ -58,7 +61,26 @@ class HomePage extends StatelessWidget {
                     color: kPrimaryColor),
               ),
             ),
+
+            //CategoriesWidget
             CategoriesWidget(),
+
+            //Items
+            Container(
+              alignment: Alignment.centerLeft,
+              margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+              child: Text(
+                'Melhores preços',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                  color: kPrimaryColor,
+                ),
+              ),
+            ),
+
+            //ItemsWidget
+            ItemsWidget(),
           ]),
         )
       ]),
