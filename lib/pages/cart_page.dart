@@ -24,7 +24,47 @@ class CartPage extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(children: [
               CartItemSamples(),
+              AddCouponCode(),
             ]),
+          ),
+        )
+      ]),
+    );
+  }
+}
+
+class AddCouponCode extends StatelessWidget {
+  const AddCouponCode({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      // decoration: BoxDecoration(
+      //   borderRadius: BorderRadius.circular(10),
+      margin: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
+      padding: EdgeInsets.all(10),
+      child: Row(children: [
+        Container(
+          decoration: BoxDecoration(
+            color: kPrimaryColor,
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Icon(
+            Icons.add,
+            color: Colors.white,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 10),
+          child: Text(
+            'Adicionar código do cupom',
+            style: TextStyle(
+              color: kPrimaryColor,
+              fontWeight: FontWeight.bold,
+              fontSize: 16,
+            ),
           ),
         )
       ]),
