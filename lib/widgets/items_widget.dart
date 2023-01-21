@@ -43,7 +43,7 @@ class ItemsWidget extends StatelessWidget {
                       const Icon(Icons.favorite_border, color: Colors.red),
                     ]),
                 InkWell(
-                  onTap: () {},
+                  onTap: () => Navigator.pushNamed(context, 'itemPage'),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     child: Image.asset('images/1.png', height: 120, width: 120),
