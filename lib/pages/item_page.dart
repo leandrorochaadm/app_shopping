@@ -31,7 +31,7 @@ class ItemPage extends StatelessWidget {
         Arc(
           height: 30,
           edge: Edge.TOP,
-          arcType: ArcType.CONVEX,
+          arcType: ArcType.CONVEY,
           child: Container(
             width: double.infinity,
             color: Colors.white,
@@ -41,7 +41,7 @@ class ItemPage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(
                     top: 50,
-                    bottom: 50,
+                    bottom: 15,
                   ),
                   child: Row(children: [
                     const Text(
@@ -123,7 +123,7 @@ class ItemPage extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 12),
                   child: Text(
-                    'Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto ',
+                    'Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto Detalhes do produto',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 17,
@@ -218,6 +218,7 @@ class ItemPage extends StatelessWidget {
           ),
         ),
       ]),
+      bottomNavigationBar: ItemBottomNavBar(),
     );
   }
 }
